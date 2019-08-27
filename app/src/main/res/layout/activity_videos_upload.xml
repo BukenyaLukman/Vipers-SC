@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Admin.VideosUploadActivity">
+        <include
+            android:id="@+id/videos_app_bar"
+            layout="@layout/app_bar_layout">
+
+        </include>
+
+        <Button
+            android:id="@+id/admin_choose_videos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Video"
+            android:padding="15dp"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_below="@+id/videos_app_bar"
+            android:textStyle="bold|italic"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <VideoView
+            android:id="@+id/video_view_for_upload"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/admin_choose_videos"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/video_view_for_upload"/>
+
+        <EditText
+            android:id="@+id/video_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_bar"
+            android:hint="Title For the Video"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/inputs"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/video_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_below="@+id/video_title"
+            android:background="@drawable/inputs"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Vidoe Description"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColorHint="@android:color/black"/>
+        <TextView
+            android:id="@+id/video_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Video Category"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_below="@+id/video_description"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_category"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/admin_upload_videos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner1"
+            android:text="Upload"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:background="@drawable/buttons"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>

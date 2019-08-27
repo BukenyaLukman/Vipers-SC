@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1000789493966",
+    "firebase_url": "https://viperssc-19173.firebaseio.com",
+    "project_id": "viperssc-19173",
+    "storage_bucket": "viperssc-19173.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000789493966:android:54b17821269b24bc",
+        "android_client_info": {
+          "package_name": "com.example.viperssc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000789493966-aqonjh9s4e5lvhm80l6iohagru16f9on.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.viperssc",
+            "certificate_hash": "02f5f62bb048a2835cd91c3351b988009fcbb011"
+          }
+        },
+        {
+          "client_id": "1000789493966-oqgi1pscg51mel50niopfcl9d8bnh7ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWTB4gDmfQlR18u-zBPazanSzXSkFh6XA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000789493966-oqgi1pscg51mel50niopfcl9d8bnh7ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

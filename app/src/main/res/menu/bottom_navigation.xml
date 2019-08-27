@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        android:id="@+id/options_home"/>
+    <item
+        android:icon="@drawable/ic_matches_black_24dp"
+        android:title="Matches"
+        android:id="@+id/options_matches"/>
+    <item
+        android:icon="@drawable/ic_videos_black_24dp"
+        android:title="Videos"
+        android:id="@+id/options_videos"/>
+    <item
+        android:icon="@drawable/ic_news_black_24dp"
+        android:title="News"
+        android:id="@+id/options_news"/>
+    <item
+        android:icon="@drawable/ic_team_24dp"
+        android:title="Teams"
+        android:id="@+id/options_teams"/>
+
+</menu>
