@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-import com.example.viperssc.Admin.NewsFeedActivity;
 import com.example.viperssc.Admin.VideosUploadActivity;
 import com.example.viperssc.HomeFragment;
 import com.example.viperssc.R;
@@ -47,18 +46,14 @@ public class EventsAndChatsActivity extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               GoToVideos();
-               // GoToPictures();
+                Intent MenuIntent = new Intent(EventsAndChatsActivity.this, MenuListActivity.class);
+                startActivity(MenuIntent);
+
             }
         });
 
     }
 
-    private void GoToPictures() {
-        Intent NewsIntent = new Intent(EventsAndChatsActivity.this, NewsFeedActivity.class);
-        startActivity(NewsIntent);
-        finish();
-    }
 
     private void GoToVideos() {
         Intent videoIntent = new Intent(EventsAndChatsActivity.this, VideosUploadActivity.class);
